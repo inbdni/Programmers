@@ -1,7 +1,6 @@
 #include <string>
 #include <vector>
-#include <iostream>
-#include <unistd.h>
+
 using namespace std;
 
 vector<int> solution(int n) {
