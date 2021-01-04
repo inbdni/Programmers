@@ -47,5 +47,6 @@ int solution(string numbers) {
     for (i = 0; i < n.size(); i++) {
         answer += is_prime(n[i]);
     }
+
     return answer;
 }
