@@ -38,11 +38,13 @@ string solution(int n, int t, int m, int p) {
         {
             seq++;
             if (seq == p)
+            {
                 answer += baseNum[i];
+                if (answer.size() == t)
+                    break;
+            } 
             if (seq == m)
                 seq = 0;
-            if (answer.size() == t)
-                break;
         }
         baseNum.clear();
     }
