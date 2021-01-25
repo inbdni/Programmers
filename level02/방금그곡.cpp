@@ -1,7 +1,6 @@
 #include <string>
 #include <vector>
 #include <algorithm>
-#include <iostream>
 
 using namespace std;
 
@@ -61,7 +60,8 @@ string get_melody(string &s)
     return s.substr(i);
 }
 
-string solution(string m, vector<string> musicinfos) {
+string solution(string m, vector<string> musicinfos)
+{
     string answer = "(None)";
     string melody;
     int i, res;
