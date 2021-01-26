@@ -1,4 +1,3 @@
-#include <iostream>
 #include <vector>
 #include <algorithm>
 
@@ -11,10 +10,10 @@ int solution(vector<int> A, vector<int> B)
     
     sort(A.begin(), A.end());
     sort(B.begin(), B.end());
-    while (i < A.size()) {
+    while (i < A.size())
+	{
         answer += A[A.size() - i - 1] * B[i];
         i++;
     }
-
     return answer;
 }
