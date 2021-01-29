@@ -24,9 +24,9 @@ int solution(int m, int n, vector<vector<int>> puddles) {
             {
                 if (mem[i][j] < 0)
                     continue;
-                if (i > 1 && mem[i - 1][j] != -1)
+                if (mem[i - 1][j] != -1)
                     mem[i][j] += mem[i - 1][j];
-                if (j > 1 && mem[i][j - 1] != -1)
+                if (mem[i][j - 1] != -1)
                     mem[i][j] += mem[i][j - 1];
                 mem[i][j] %= 1000000007;
             }
