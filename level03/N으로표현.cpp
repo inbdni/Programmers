@@ -35,11 +35,11 @@ int solution(int N, int number) {
                     if (b != 0)
                         us[i].insert(a / b);
                 }
+        		if (us[i].find(number) != us[i].end())
+        		{
+          			return i;
+       			}
             }
-        }
-        if (us[i].find(number) != us[i].end())
-        {
-            return i;
         }
     }
     return -1;
