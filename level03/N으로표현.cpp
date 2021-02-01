@@ -23,7 +23,7 @@ int solution(int N, int number) {
     }
     for (i = 2; i <= 8; i++)
     {
-        for (j = 1; j <= i; j++)
+        for (j = 1; j < i; j++)
         {
             for (auto a : us[j])
             {
