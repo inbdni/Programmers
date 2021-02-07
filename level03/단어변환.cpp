@@ -42,11 +42,11 @@ int dfs(int depth, string begin, string target, vector<string> &words, vector<bo
 }
 
 int solution(string begin, string target, vector<string> words) {
-    int answer = INT_MAX;
+    int answer;
     vector<bool> used;
     
     used.resize(words.size(), false);
-    answer = min(answer, dfs(0, begin, target, words, used));
+    answer = dfs(0, begin, target, words, used);
     if (answer == INT_MAX)
         return 0;
     return answer;
