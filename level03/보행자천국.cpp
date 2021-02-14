@@ -1,6 +1,4 @@
 #include <vector>
-#include <queue>
-#include <cstring>
 
 #define v   0
 #define h   1
@@ -13,7 +11,6 @@ int solution(int m, int n, vector<vector<int>> city_map) {
     int d[m][n][2];
     int i, j, value, tmp;
     
-    memset(d, 0, sizeof(d));
     for (i = 0; i < m; i++)
     {
         for(j = 0; j < n; j++)
