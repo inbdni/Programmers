@@ -111,7 +111,6 @@ int bfs(vector<vector<int>> &board)
                 push_pos(q, next, dist);
             }
         }
-
     }
     return 0;
 }
