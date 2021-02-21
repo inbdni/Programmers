@@ -12,9 +12,9 @@ void rot(vector<vector<int>> &key)
     vector<vector<int>> tmp(key);
     int i, j;
 
-    for (i = 0; i < key.size(); i++)
+    for (i = 0; i < m; i++)
     {
-        for (j = 0; j < key.size(); j++)
+        for (j = 0; j < m; j++)
         {
             key[i][j] = tmp[j][abs(m - 1 - i)];
         }
