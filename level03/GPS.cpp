@@ -15,6 +15,10 @@ int solution(int n, int m, vector<vector<int>> edge_list, int k, vector<int> gps
     graph.resize(n + 1, vector<int> (0));
     mem.clear();
     mem.resize(k + 1, vector<int> (n + 1, INT_MAX));
+    for (i = 1; i <= n; i++)
+    {
+        graph[i].push_back(i);
+    }
     for (i = 0; i < edge_list.size(); i++)
     {
         graph[edge_list[i][0]].push_back(edge_list[i][1]);
