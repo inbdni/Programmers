@@ -97,12 +97,10 @@ int get_dist(pos src, pos dst, vector<vector<int>> &board)
         {
             curr = q.front();
             q.pop();
-            // 카드를 찾았으면 리턴
             if (curr.r == dst.r && curr.c == dst.c)
             {
                 return res;
             }
-            // 방향키 이동
             for (j = 0; j < 4; j++)
             {
                 next.init(curr.r + d[j], curr.c + d[3 - j]);
@@ -111,7 +109,6 @@ int get_dist(pos src, pos dst, vector<vector<int>> &board)
                 visit[next.r][next.c] = true;
                 q.push(next);
             }
-            // ctrl + 방향키 이동
             for (j = 0; j < 4; j++)
             {
                 next = curr;
